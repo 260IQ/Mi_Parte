@@ -1,7 +1,7 @@
 import React from 'react'
 import css from '../style/Integrantes.css'
 
-const Integrantes = ({ alumno1, alumnoL,alumnoc }) => {
+const Integrantes = ({ alumno1, alumnoL,alumnoc,alumno4 }) => {
     return (
         <body>
             <div className='contenedor'>
@@ -34,6 +34,16 @@ const Integrantes = ({ alumno1, alumnoL,alumnoc }) => {
                         <li><figure><img src={require(`../resources/${alumnoc.foto}`)} alt="foto alumno christian" /></figure></li>
                     </ul>
                 </div>
+                <div className='tarjeta'>
+                    <ul>
+                        <li>{alumno4.nombre}</li>
+                        <li>{alumno4.apellido}</li>
+                        <li>{alumno4.legajo}</li>
+                        <li><a href={alumno4.github}>Github</a></li>
+                        <li><figure><img src={require(`../resources/${alumno4.foto}`)} alt="foto alumno francisco" /></figure></li>
+                    </ul>
+                </div>
+
 
             </div>
 

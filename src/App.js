@@ -27,9 +27,17 @@ function App() {
     foto:"gamu.jpeg.jpg"
   }
 
+  const alumno4 = {
+    nombre: 'Francisco Miguel',
+    apellido: 'Palacios',
+    legajo: 61024,
+    github: "https://github.com/260IQ",
+    foto: "franfran.jpeg"
+  }
+
   return (
     <div >
-     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnoc = {alumnoc} />
+     <PaginaPrincipal alumno1={alumno1} alumnoL = {alumnoL}  alumnoc = {alumnoc} alumno4 = {alumno4} />
     </div>
   );
 }
